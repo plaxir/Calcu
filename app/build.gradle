@@ -1,0 +1,55 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
+}
+
+android {
+    namespace 'plaxir.cnc.caculator'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'plaxir.cnc.caculator'
+        minSdk 14
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    buildFeatures {
+        compose true
+    }
+}
+
+dependencies {
+    /** AndroidX **/
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.core:core:1.6.0'
+    implementation 'androidx.media:media:1.3.1'
+    implementation 'androidx.multidex:multidex:2.0.1' // as we have over 65536 methods...
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.google.android.material:material:1.4.0'
+
+
+    /** Desugaring **/
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs_nio:2.0.2'
+}

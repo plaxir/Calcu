@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#434343"
+    android:orientation="vertical"
+	android:fitsSystemWindows="true">
+
+	<ScrollView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_marginBottom="50dp">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#BC0B00">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:weightSum="2">
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:orientation="vertical"
+						android:layout_weight="1"
+						android:weightSum="2"
+						android:layout_gravity="left">
+
+						<TextView
+						    android:layout_width="match_parent"
+						    android:layout_height="wrap_content"
+						    android:layout_gravity="center"
+						    android:layout_marginBottom="5dp"
+						    android:layout_marginLeft="5dp"
+						    android:layout_marginRight="5dp"
+						    android:background="#C28200"
+						    android:gravity="center"
+						    android:paddingBottom="5dp"
+						    android:paddingLeft="10dp"
+						    android:paddingRight="10dp"
+						    android:paddingTop="5dp"
+						    android:text="DIAMETER"
+						    android:textAppearance="?android:attr/textAppearanceLarge"
+						    android:textColor="#000000" />
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:orientation="vertical"
+						android:layout_weight="1"
+						android:layout_marginLeft="10dp"
+						android:gravity="right">
+
+						<TextView
+						    android:id="@+id/diameterOutPut"
+						    android:layout_width="match_parent"
+						    android:layout_height="match_parent"
+						    android:layout_gravity="center"
+						    android:layout_margin="5dp"
+						    android:background="#BCBBBB"
+						    android:gravity="center"
+						    android:padding="5dp"
+						    android:textAppearance="?android:attr/textAppearanceLarge"
+						    android:textColor="#000000" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:weightSum="2"
+					android:background="#7EAF08"
+					android:layout_margin="5dp">
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:orientation="vertical"
+						android:layout_weight="1"
+						android:weightSum="2"
+						android:layout_gravity="left"
+						android:gravity="center"
+						android:layout_marginRight="5dp">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="A"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:layout_margin="5dp"
+							android:padding="5dp"
+							android:background="#626262"
+							android:gravity="center"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:orientation="vertical"
+						android:layout_weight="1"
+						android:gravity="center">
+
+						<TextView
+						    android:id="@+id/AoutPut"
+						    android:layout_width="match_parent"
+						    android:layout_height="match_parent"
+						    android:layout_margin="5dp"
+						    android:background="#BCBBBB"
+						    android:gravity="center"
+						    android:padding="5dp"
+						    android:textAppearance="?android:attr/textAppearanceLarge"
+						    android:textColor="#000000" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:weightSum="2"
+					android:background="#7EAF08"
+					android:layout_margin="5dp">
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:orientation="vertical"
+						android:layout_weight="1"
+						android:weightSum="2"
+						android:layout_gravity="left"
+						android:gravity="center"
+						android:layout_marginRight="5dp">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:text="Disk Diameter"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:layout_margin="5dp"
+							android:padding="5dp"
+							android:background="#626262"
+							android:gravity="center"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:orientation="vertical"
+						android:layout_weight="1"
+						android:gravity="center">
+
+						<EditText
+						    android:id="@+id/diameterInPut"
+						    android:layout_width="match_parent"
+						    android:layout_height="match_parent"
+						    android:layout_margin="5dp"
+						    android:background="#E6E6E6"
+						    android:ems="10"
+						    android:padding="5dp"
+						    android:textColor="#000000" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</ScrollView>
+
+	<include layout="@layout/nav"/>
+</RelativeLayout>
+

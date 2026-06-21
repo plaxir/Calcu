@@ -1,0 +1,14 @@
+<resources>
+    <style name="Theme.NoTitleBar.Fullscreen" parent="Theme.AppCompat.DayNight">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <item name="android:editTextStyle">@style/NumberEditText</item>
+        <item name="editTextStyle">@style/NumberEditText</item>
+    </style>
+
+    <style name="NumberEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:inputType">numberSigned|numberDecimal</item>
+    </style>
+</resources>
